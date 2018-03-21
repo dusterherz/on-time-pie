@@ -18,17 +18,23 @@ The project is currently in progress.
 See the Github project and issues to see the current progress of the project.
 
 Progress Bar :
-⚫⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪ 5%
+⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪ 50%
 
 ## Getting Started
 
 ### Hardware
 
-WIP
+You will need a 7 segment 4 display common cathode with 12 pins like [this one](https://www.amazon.com/uxcell%C2%AE-7-Segment-Digital-Display-Cathode/dp/B00W977X8O/), 8 x 100 Ohm resistors, some wires, and, of course, a raspberry pi connected on the internet !
+
+You can follow [this tutorial](http://raspi.tv/2015/how-to-drive-a-7-segment-display-directly-on-raspberry-pi-in-python) made by @raspitv to connect your 4 digits - 7 segments diplay on your raspberry. The project use exactly the same pins, so no need to modify anything in the code !
 
 ### Setting up the Raspberry Pi
 
-WIP
+For this project your raspberry need the 3.6 version of Python. If you have raspbian installed on it, you can upgrade your version of python [following this tutorial](https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f).
+
+You will need also pipenv to run this and install all dependencies. If you don't have pipenv, your can follow [this official tutorial](https://docs.pipenv.org/install/#installing-pipenv) to install it. Then make ```pipenv install``` to install all dependencies and to create a virtualenv for this project.
+
+To run the project, access to your virtualenv via ```pipenv shell``` and run the project with ```python run.py``` and voila, it's alive !
 
 ### Configure
 
