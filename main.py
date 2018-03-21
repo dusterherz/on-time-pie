@@ -9,6 +9,5 @@ if __name__ == '__main__':
         sys.exit()
     on_time_pie = OnTimePie(sys.argv[1])
     while True:
-        on_time_pie.update_time()
-        print(on_time_pie.next_passages)
-        time.sleep(60)
+        on_time_pie.update_times()
+        on_time_pie.display_times()
